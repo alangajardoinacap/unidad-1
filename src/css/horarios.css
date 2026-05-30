@@ -1,0 +1,28 @@
+/* horarios.css — estilos exclusivos de horarios.html */
+
+.tabla-horarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--cafe-border);
+}
+
+.tabla-horarios thead th {
+  background-color: var(--cafe-dark);
+  color: #fff;
+}
+
+.tabla-horarios tbody tr:nth-child(even) {
+  background-color: #f5ede4;
+}
+
+.tabla-horarios tbody tr:hover {
+  background-color: #f0e0cc;
+}

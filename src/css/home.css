@@ -1,0 +1,69 @@
+/* home.css — estilos exclusivos de index.html */
+
+.hero {
+  background: linear-gradient(135deg, #2c1a0e 0%, #5c3317 100%);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #e0c9b5;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b5651d;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #8b4d13;
+}
+
+/* Tarjetas de resumen en la home */
+.highlights {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  flex: 1;
+  min-width: 200px;
+  background: var(--cafe-surface);
+  border: 1px solid var(--cafe-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.highlight-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.highlight-card p {
+  font-size: 0.85rem;
+  color: var(--cafe-muted);
+}

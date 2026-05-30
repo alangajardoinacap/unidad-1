@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#2c1a0e"/>
+  <text x="16" y="22" font-family="Georgia, serif" font-size="13" fill="#b5651d" font-weight="bold">CAFÉ</text>
+  <text x="16" y="42" font-family="Georgia, serif" font-size="16" fill="#ffffff" font-weight="bold">Bits &amp; Bytes</text>
+  <text x="158" y="38" font-family="serif" font-size="28" fill="#b5651d">☕</text>
+</svg>
