@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Café Bits &amp; Bytes</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/contacto.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-cafe sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../assets/logo.svg" alt="Café Bits &amp; Bytes" height="36" />
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+
+    <h1 class="mb-1">Contáctanos</h1>
+    <p class="text-muted mb-4">¿Sugerencias, pedidos especiales o reservas de sala de estudio?</p>
+
+    <form id="contactForm" class="row g-3" style="max-width:680px" novalidate>
+
+      <div class="col-md-6">
+        <label for="nombre" class="form-label fw-semibold">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre"
+               placeholder="Tu nombre completo" />
+        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email"
+               placeholder="tu@correo.cl" />
+        <div class="invalid-feedback">Ingresa un correo válido (ej: tu@correo.cl).</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="telefono" class="form-label fw-semibold">
+          Teléfono <span class="text-muted fw-normal">(opcional)</span>
+        </label>
+        <input type="tel" class="form-control" id="telefono" name="telefono"
+               placeholder="+56 9 1234 5678" />
+      </div>
+
+      <div class="col-md-6">
+        <label for="asunto" class="form-label fw-semibold">Asunto</label>
+        <select class="form-select" id="asunto" name="asunto">
+          <option value="">— Selecciona —</option>
+          <option value="reserva">Reserva de sala de estudio</option>
+          <option value="pedido">Pedido especial</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="otro">Otro</option>
+        </select>
+        <div class="invalid-feedback">Selecciona un asunto.</div>
+      </div>
+
+      <div class="col-12">
+        <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje"
+                  placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+        <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-cafe btn-lg rounded-pill px-5">
+          Enviar mensaje →
+        </button>
+      </div>
+
+      <!-- Alerta de éxito — JS agrega clase .visible -->
+      <div id="mensajeExito" class="col-12 alert alert-success alert-exito" role="alert">
+        ✅ <strong>¡Mensaje enviado!</strong> Te responderemos a la brevedad.
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer class="footer-cafe py-4 text-center">
+    <p class="mb-0 small" style="color:#a89080">
+      &copy; 2024 Café Bits &amp; Bytes &mdash;
+      <a href="mailto:cafe@universidad.cl" class="text-cafe">cafe@universidad.cl</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>

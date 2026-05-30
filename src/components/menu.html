@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú — Café Bits &amp; Bytes</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-cafe sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../assets/logo.svg" alt="Café Bits &amp; Bytes" height="36" />
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+
+    <h1 class="mb-1">Nuestro menú</h1>
+    <p class="text-muted mb-4">Ingredientes de calidad, precios para estudiantes.</p>
+
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/431/400/300" class="card-img-top" alt="Taza de espresso con crema dorada" />
+          <div class="card-body">
+            <h5 class="card-title">Espresso doble</h5>
+            <p class="card-text text-muted small">Blend de altura, extracción de 25 segundos.</p>
+            <span class="fw-bold text-cafe">$1.800</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/493/400/300" class="card-img-top" alt="Vaso de café frío con hielo" />
+          <div class="card-body">
+            <h5 class="card-title">
+              Cold brew
+              <span class="badge bg-success rounded-pill ms-1" style="font-size:.65rem">Nuevo</span>
+            </h5>
+            <p class="card-text text-muted small">12 horas de maceración en frío. Sin amargor.</p>
+            <span class="fw-bold text-cafe">$2.500</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/429/400/300" class="card-img-top" alt="Croissant recién horneado" />
+          <div class="card-body">
+            <h5 class="card-title">Croissant mantequilla</h5>
+            <p class="card-text text-muted small">Horneado cada mañana a las 7:00 AM.</p>
+            <span class="fw-bold text-cafe">$1.200</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/488/400/300" class="card-img-top" alt="Sándwich de pollo con lechuga" />
+          <div class="card-body">
+            <h5 class="card-title">Sándwich de pollo</h5>
+            <p class="card-text text-muted small">Pan de masa madre, pechuga grillada, palta.</p>
+            <span class="fw-bold text-cafe">$3.900</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/42/400/300" class="card-img-top" alt="Granola con frutas y yogurt" />
+          <div class="card-body">
+            <h5 class="card-title">Bowl granola</h5>
+            <p class="card-text text-muted small">Avena, frutos rojos, yogurt griego y miel.</p>
+            <span class="fw-bold text-cafe">$2.800</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm card-hover">
+          <img src="https://picsum.photos/id/312/400/300" class="card-img-top" alt="Torta de zanahoria con betún" />
+          <div class="card-body">
+            <h5 class="card-title">
+              Torta zanahoria
+              <span class="badge bg-warning text-dark rounded-pill ms-1" style="font-size:.65rem">Popular</span>
+            </h5>
+            <p class="card-text text-muted small">Receta de la abuela, sin colorantes artificiales.</p>
+            <span class="fw-bold text-cafe">$1.500</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+  </main>
+
+  <footer class="footer-cafe py-4 text-center">
+    <p class="mb-0 small" style="color:#a89080">
+      &copy; 2024 Café Bits &amp; Bytes &mdash;
+      <a href="mailto:cafe@universidad.cl" class="text-cafe">cafe@universidad.cl</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

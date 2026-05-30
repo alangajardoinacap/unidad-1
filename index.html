@@ -3,162 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Bits & Bytes</title>
-  <link rel="stylesheet" href="src/css/global.css">
-  <link rel="stylesheet" href="src/css/home.css">
+  <title>Café Bits &amp; Bytes</title>
+  <link rel="icon" href="src/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/css/global.css" />
+  <link rel="stylesheet" href="src/css/home.css" />
 </head>
-
 <body>
-
-  <header>
-    <nav class="navbar">
-      <a href="#">Café Bits & Bytes</a>
-      <ul>
-        <li><a href="#menu" class="active">Menú</a></li>
-        <li><a href="#horarios">Horarios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-cafe sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="src/assets/logo.svg" alt="Café Bits &amp; Bytes" height="36" />
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="src/components/menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="src/components/horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="src/components/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <section class="hero">
-    <h1>El café de los que construyen el futuro ☕</h1>
-    <p>WiFi de 1 Gbps, enchufes en cada mesa y el mejor espresso del campus.</p>
-    <a href="#menu" class="btn">Ver el menú</a>
+    <h1 class="display-4 fw-bold mb-3">El café de los que<br>construyen el futuro ☕</h1>
+    <p class="lead mb-4">WiFi de 1 Gbps, enchufes en cada mesa y el mejor espresso del campus.</p>
+    <a href="src/components/menu.html" class="btn btn-cafe btn-lg rounded-pill px-4">Ver el menú</a>
   </section>
 
-  <main class="container">
+  <main>
+    <div class="container py-5">
 
-    <section id="menu">
-      <h2 class="page-title">Nuestro menú</h2>
-      <p class="page-subtitle">Ingredientes de calidad, precios para estudiantes.</p>
+      <h2 class="mb-1">¿Por qué elegirnos?</h2>
+      <p class="text-muted mb-4">Más que un café, un espacio para crear.</p>
 
-      <article>
-        <img src="https://picsum.photos/id/431/400/300" alt="Taza de espresso con crema dorada" />
-        <h3>Espresso doble</h3>
-        <p>Blend de altura, extracción de 25 segundos.</p>
-        <p>$1.800</p>
-      </article>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+            <div class="fs-1 mb-3">⚡</div>
+            <h5 class="card-title">WiFi de 1 Gbps</h5>
+            <p class="card-text text-muted small">Conexión simétrica sin throttling. Corre tus containers sin miedo.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+            <div class="fs-1 mb-3">🔌</div>
+            <h5 class="card-title">Enchufes en cada mesa</h5>
+            <p class="card-text text-muted small">220V y USB-C en todas las mesas. Nunca más busques un tomacorriente.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+            <div class="fs-1 mb-3">☕</div>
+            <h5 class="card-title">Café de especialidad</h5>
+            <p class="card-text text-muted small">Granos de origen, tostado en semana. Nada de café de sobre.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+            <div class="fs-1 mb-3">🕐</div>
+            <h5 class="card-title">Abierto hasta las 21:00</h5>
+            <p class="card-text text-muted small">Para los que debuggean hasta tarde. Siempre habrá un espresso.</p>
+          </div>
+        </div>
+      </div>
 
-      <article>
-        <img src="https://picsum.photos/id/493/400/300" alt="Vaso de café frío con hielo" />
-        <h3>Cold brew</h3>
-        <p>12 horas de maceración en frío. Sin amargor.</p>
-        <p>$2.500</p>
-      </article>
-
-      <article>
-        <img src="https://picsum.photos/id/429/400/300" alt="Croissant recién horneado" />
-        <h3>Croissant mantequilla</h3>
-        <p>Horneado cada mañana a las 7:00 AM.</p>
-        <p>$1.200</p>
-      </article>
-
-      <article>
-        <img src="https://picsum.photos/id/488/400/300" alt="Sándwich de pollo con lechuga" />
-        <h3>Sándwich de pollo</h3>
-        <p>Pan de masa madre, pechuga grillada, palta.</p>
-        <p>$3.900</p>
-      </article>
-
-      <article>
-        <img src="https://picsum.photos/id/42/400/300" alt="Granola con frutas y yogurt" />
-        <h3>Bowl granola</h3>
-        <p>Avena, frutos rojos, yogurt griego y miel.</p>
-        <p>$2.800</p>
-      </article>
-
-      <article>
-        <img src="https://picsum.photos/id/312/400/300" alt="Torta de zanahoria con betún" />
-        <h3>Torta zanahoria</h3>
-        <p>Receta de la abuela, sin colorantes artificiales.</p>
-        <p>$1.500</p>
-      </article>
-
-    </section>
-
-    <section id="horarios">
-      <h2>Horarios de atención</h2>
-      <p>Estamos aquí cuando más nos necesitas.</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Día</th>
-            <th scope="col">Apertura</th>
-            <th scope="col">Cierre</th>
-            <th scope="col">Notas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lunes – Viernes</td>
-            <td>07:30</td>
-            <td>21:00</td>
-            <td>Desayuno desde las 7:30</td>
-          </tr>
-          <tr>
-            <td>Sábado</td>
-            <td>09:00</td>
-            <td>18:00</td>
-            <td>Brunch de 10:00 a 13:00</td>
-          </tr>
-          <tr>
-            <td>Domingo</td>
-            <td>10:00</td>
-            <td>15:00</td>
-            <td>Solo bebidas y pastelería</td>
-          </tr>
-          <tr>
-            <td>Feriados</td>
-            <td colspan="2">Cerrado</td>
-            <td>Ver redes sociales</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>¿Sugerencias, pedidos especiales o reservas de sala de estudio?</p>
-
-      <form action="" method="post">
-
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" />
-
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="tu@correo.cl" />
-
-        <label for="telefono">Teléfono (opcional)</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" />
-
-        <label for="asunto">Asunto</label>
-        <select id="asunto" name="asunto">
-          <option value="">— Selecciona —</option>
-          <option value="reserva">Reserva de sala de estudio</option>
-          <option value="pedido">Pedido especial</option>
-          <option value="sugerencia">Sugerencia</option>
-          <option value="otro">Otro</option>
-        </select>
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
-
-        <button type="submit">Enviar mensaje</button>
-
-      </form>
-    </section>
-
+    </div>
   </main>
 
-  <footer>
-    <p>
-      &copy; 2024 Café Bits &amp; Bytes &mdash;
-      Edificio de Ingeniería, Campus Norte &mdash;
-      <a href="mailto:cafe@universidad.cl">cafe@universidad.cl</a>
+  <footer class="footer-cafe py-4 text-center">
+    <p class="mb-0 small" style="color:#a89080">
+      &copy; 2024 Café Bits &amp; Bytes &mdash; Edificio de Ingeniería, Campus Norte &mdash;
+      <a href="mailto:cafe@universidad.cl" class="text-cafe">cafe@universidad.cl</a>
     </p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

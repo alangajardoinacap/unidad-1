@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horarios — Café Bits &amp; Bytes</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/horarios.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-cafe sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../assets/logo.svg" alt="Café Bits &amp; Bytes" height="36" />
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link active" href="horarios.html">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+
+    <h1 class="mb-1">Horarios de atención</h1>
+    <p class="text-muted mb-4">Estamos aquí cuando más nos necesitas.</p>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Día</th>
+            <th scope="col">Apertura</th>
+            <th scope="col">Cierre</th>
+            <th scope="col">Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes – Viernes</td>
+            <td>07:30</td>
+            <td>21:00</td>
+            <td>Desayuno desde las 7:30</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>09:00</td>
+            <td>18:00</td>
+            <td>Brunch de 10:00 a 13:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>10:00</td>
+            <td>15:00</td>
+            <td>Solo bebidas y pastelería</td>
+          </tr>
+          <tr>
+            <td>Feriados</td>
+            <td colspan="2" class="text-center text-muted fst-italic">Cerrado</td>
+            <td>Ver redes sociales</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer class="footer-cafe py-4 text-center">
+    <p class="mb-0 small" style="color:#a89080">
+      &copy; 2024 Café Bits &amp; Bytes &mdash;
+      <a href="mailto:cafe@universidad.cl" class="text-cafe">cafe@universidad.cl</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

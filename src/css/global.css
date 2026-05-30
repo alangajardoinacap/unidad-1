@@ -1,94 +1,27 @@
-/* global.css — estilos base compartidos por todas las páginas */
+/* global.css — compartido por todas las páginas
+   Solo lo que Bootstrap no cubre. */
 
 :root {
-  --cafe-bg:      #faf8f5;
-  --cafe-surface: #ffffff;
-  --cafe-accent:  #b5651d;
-  --cafe-dark:    #2c1a0e;
-  --cafe-muted:   #7a6655;
-  --cafe-border:  #e8ddd3;
+  --cafe-dark:   #2c1a0e;
+  --cafe-accent: #b5651d;
+  --cafe-muted:  #e0c9b5;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Navbar: color de fondo de marca */
+.navbar-cafe                       { background-color: var(--cafe-dark); }
+.navbar-cafe .nav-link             { color: #ccc; }
+.navbar-cafe .nav-link:hover,
+.navbar-cafe .nav-link.active      { color: var(--cafe-accent) !important; }
 
-body {
-  font-family: Georgia, serif;
-  background-color: var(--cafe-bg);
-  color: var(--cafe-dark);
-  line-height: 1.6;
-}
+/* Footer: fondo de marca */
+.footer-cafe { background-color: var(--cafe-dark); }
 
-/* ── Navbar ── */
-.navbar {
-  background-color: var(--cafe-dark);
-  padding: 0 2rem;
-}
+/* Botón y texto de acento */
+.btn-cafe                  { background-color: var(--cafe-accent); color: #fff; border: none; }
+.btn-cafe:hover,
+.btn-cafe:focus            { background-color: #8b4d13; color: #fff; }
+.text-cafe                 { color: var(--cafe-accent) !important; }
 
-.navbar-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar img.logo {
-  height: 36px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: var(--cafe-accent);
-}
-
-/* ── Footer ── */
-.footer {
-  background-color: var(--cafe-dark);
-  color: #a89080;
-  text-align: center;
-  padding: 1.5rem 2rem;
-  font-size: 0.85rem;
-  margin-top: 4rem;
-}
-
-.footer a {
-  color: var(--cafe-accent);
-  text-decoration: none;
-}
-
-/* ── Contenedor genérico ── */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-}
-
-.page-title {
-  font-size: 2rem;
-  margin-bottom: 0.4rem;
-  color: var(--cafe-dark);
-}
-
-.page-subtitle {
-  color: var(--cafe-muted);
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  font-family: Arial, sans-serif;
-}
+/* Hover en cards (Bootstrap no lo incluye) */
+.card-hover                { transition: transform .2s, box-shadow .2s; }
+.card-hover:hover          { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.12) !important; }
